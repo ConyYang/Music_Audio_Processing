@@ -15,3 +15,18 @@ which complies with the 1/f signal formula.
 conda install -c conda-forge librosa
 # conda env create -f environment.yml
 ```
+
+### Implementation
+In process.py, we do visualization of the audio.
+- Waveplot
+![waveplot](assets/waveplot.png)
+- Spectrum
+![Spectrum](assets/spectrum.jpg)
+- zero-crossing rate
+![zcr](assets/zcrPortion.png)
+- Spectral Centroids
+![SC](assets/spectralCentroids.png)
+- Spectral Roll-Off
+![SR](assets/spectralRollOff.png)
+
+In create.py, we create 5 second audio.
