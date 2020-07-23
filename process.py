@@ -6,14 +6,13 @@ import sklearn
 
 audio_path = 'beats.wav'
 # ipd.Audio(audio_path)
-x, sr = librosa.load(audio_path)
+# x, sr = librosa.load(audio_path)
 
 
 class Music(object):
-    def __init__(self, path, x, sr):
+    def __init__(self, path):
         self.path = path
-        self.x = x
-        self.sr = sr
+        self.x, self.sr = librosa.load(path)
 
     def print_info(self):
         print(type(self.x), type(self.sr))
@@ -71,5 +70,5 @@ class Music(object):
         plt.savefig('spectralRollOff.png')
         plt.show()
 
-myaudio = Music(path=audio_path, x=x, sr=sr)
-myaudio.cal_spectral_rolloff()
+myaudio = Music(path=audio_path)
+myaudio.print_info()
