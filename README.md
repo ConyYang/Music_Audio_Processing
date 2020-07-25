@@ -47,3 +47,10 @@ MFCC Character 提取特征
 ![MFCC](assets/MFCC.png)
 We choose an audio that has some loop.
 ![waveplotMFCC](assets/mfcc_waveplot.png)
+We calculate MFCC 
+![MFCC](assets/mfcc_value.png)
+We scale up the characteristics. Make mean = 0 and mean square = 1
+![scaleMFCC](assets/mfcc_scale_value.png)
+Chromaticity frequency
+![frequency](assets/mfcc_chromagram.png)
+
