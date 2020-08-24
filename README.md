@@ -1,4 +1,4 @@
-## Python audio signal processing
+# Task 1 Python audio signal processing
 Achieve music genre classification and feature extraction. 
 
 ### Intro
@@ -54,3 +54,8 @@ We scale up the characteristics. Make mean = 0 and mean square = 1
 Chromaticity frequency
 ![frequency](assets/mfcc_chromagram.png)
 
+# Task 2 Audio Processing in Python
+Speech preprocessing In deep learning, speech input is processed as needed: 
+Framing and windowing Pre-emphasis 
+Zero crossing rate 
+Short-term energy
