@@ -19,15 +19,15 @@ conda install -c conda-forge librosa
 ### Implementation
 In process.py, we do visualization of the audio.
 - Waveplot
-![waveplot](assets/waveplot.png)
+![waveplot](PythonAudioProcessing/assets/waveplot.png)
 - Spectrum
-![Spectrum](assets/spectrum.jpg)
+![Spectrum](PythonAudioProcessing/assets/spectrum.jpg)
 - zero-crossing rate
-![zcr](assets/zcrPortion.png)
+![zcr](PythonAudioProcessing/assets/zcrPortion.png)
 - Spectral Centroids
-![SC](assets/spectralCentroids.png)
+![SC](PythonAudioProcessing/assets/spectralCentroids.png)
 - Spectral Roll-Off
-![SR](assets/spectralRollOff.png)
+![SR](PythonAudioProcessing/assets/spectralRollOff.png)
 
 In create.py, we create 5 second audio.
 
@@ -44,17 +44,22 @@ MFCCs（Mel Frequency Cepstral Coefficents）
 听觉感知的Mel非线性频谱中，然后转换到倒谱上。
 
 MFCC Character 提取特征 
-![MFCC](assets/MFCC.png)
+![MFCC](PythonAudioProcessing/assets/MFCC.png)
 We choose an audio that has some loop.
-![waveplotMFCC](assets/mfcc_waveplot.png)
+![waveplotMFCC](PythonAudioProcessing/assets/mfcc_waveplot.png)
 We calculate MFCC 
-![MFCC](assets/mfcc_value.png)
+![MFCC](PythonAudioProcessing/assets/mfcc_value.png)
 We scale up the characteristics. Make mean = 0 and mean square = 1
-![scaleMFCC](assets/mfcc_scale_value.png)
+![scaleMFCC](PythonAudioProcessing/assets/mfcc_scale_value.png)
 Chromaticity frequency
-![frequency](assets/mfcc_chromagram.png)
+![frequency](PythonAudioProcessing/assets/mfcc_chromagram.png)
 
-# Task 2 Audio Processing in Python
+### Task 2 The Sound of AI
+![waveplot](TheSoundOfAI/result/waveplot.png)
+We choose 3 .wav file to plot out the waveplot with their amplitude envelope.
+
+
+### Task 3 Audio Processing in Python
 Speech preprocessing In deep learning, speech input is processed as needed: 
 Framing and windowing Pre-emphasis 
 Zero crossing rate 
