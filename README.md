@@ -55,8 +55,22 @@ Chromaticity frequency
 ![frequency](PythonAudioProcessing/assets/mfcc_chromagram.png)
 
 ### Task 2 The Sound of AI
-![waveplot](TheSoundOfAI/result/waveplot.png)
 We choose 3 .wav file to plot out the waveplot with their amplitude envelope.
+![waveplot](TheSoundOfAI/result/waveplot.png)
+We first use librosa.feature.rms to calculate the rms Energy and plot on the graph as the red line shows.
+![rmsEnergy](TheSoundOfAI/result/rmsEnergy.png)
+Then we try to implement the rms function use mathematical formula. We plot it as the yellow line and compare
+with the previous red line. We see there is no big difference.
+![rmsEnergy](TheSoundOfAI/result/rmsEnergyCompare.png)
+
+Now we aim to visualize the zero-crossing rate. This compares the zero crossing rate of those 3 .wav files.
+![ZeroCrossingRate](TheSoundOfAI/result/ZeroCrossingRate.png)
+We can maunally chose set the scaler or not.
+
+We also compare the zcr of a music file and a noise file.
+It is clear that noise file has higher ZCR then a music file.
+![ZRC_Noise_Voice](TheSoundOfAI/result/ZRC_Noise_Voice.png)
+
 
 
 ### Task 3 Audio Processing in Python
