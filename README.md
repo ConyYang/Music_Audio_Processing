@@ -71,7 +71,24 @@ We also compare the zcr of a music file and a noise file.
 It is clear that noise file has higher ZCR then a music file.
 ![ZRC_Noise_Voice](TheSoundOfAI/result/ZRC_Noise_Voice.png)
 
+#### Introduction to Fourier Transform
+We plot out the time domain and frequency domain of the signal.
+![Time Frequency Domain](TheSoundOfAI/result/time_frequency_domain.png)
+We can see a peak in the magnitude around 523 hz, which is the specific frequency for c5
+This is the fundamental of the sound we heard.
+Have a few spikes. They are harmonics or overtones of the fundamental frequency.
 
+Fourier Transform: Step by Step
+1. Choose a frequency to create a sin wave
+2. Optimize the phase to give maximum similarity (max area)
+3. Calculate Magnitude: Magnitude = positive area of the combined signal - negative area
+
+Do Step 1-3 for all possible frequencies. And check which frequency is the most important component to all signals.
+In our case, the most import frequency is 523. And the best phase to choose is 0.55.
+
+![Similarity](TheSoundOfAI/result/Similarity.png)
+The red line is created sine wave. The yellow line is signal. The blue part
+represents the similarity.
 
 ### Task 3 Audio Processing in Python
 Speech preprocessing In deep learning, speech input is processed as needed: 
