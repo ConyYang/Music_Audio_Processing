@@ -95,3 +95,30 @@ Speech preprocessing In deep learning, speech input is processed as needed:
 Framing and windowing Pre-emphasis 
 Zero crossing rate 
 Short-term energy
+
+#### Data preprocessing
+As usual, we first plot out the wave form.
+![blueAmplitude](DeepLearningForAudioProcessing/figures/blueAmplitude.png)
+Then we apply fft transform to the signal to get its magnitude. We plot out the frequency to magnitude graph.
+![blueFrequency](DeepLearningForAudioProcessing/figures/blueFrequency.png)
+We can see that most energy concentrate on lower frequency. 
+The plot is symmetric.
+we seperate the left and right part.
+We slice the frequency and magnitude to only plot out the left [art of the signal.
+![blueFrequencyLeft](DeepLearningForAudioProcessing/figures/blueFrequencyLeft.png)
+We then plot out the spectrogram of the signal. We use short-time fourier transform.
+stft -> spectrogram
+NO_SAMPLE_FFT = 2048  # the window (number of samples) performing a fft
+HOP_LENGTH = 512  # how much we are shifting
+![blueSpectrogram](DeepLearningForAudioProcessing/figures/spectrogram.png)
+There are sine sparese light dot in lower part, lower frequency. This mactch what we see in the power spectrom.
+
+Convert to decibel using log.
+![LogSpectrum](DeepLearningForAudioProcessing/figures/log_spectrogram.png)
+Has most of energy at lower frequencies.
+And it is quite stable through out the time.
+
+Plot out the MFCC graph
+![MFCCs](DeepLearningForAudioProcessing/figures/MFCC.png)
+There are intervals on y-axis, each of them represents an coefficient.
+It is also quite stable.
